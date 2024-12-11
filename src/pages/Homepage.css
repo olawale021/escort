@@ -1,66 +1,247 @@
-/* General Styling for All Screens */
-.carousel-container {
-    margin: 0 auto;
+/* Base styles */
+.page-container {
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #333;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.hero-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-.carousel-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+.hero-carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    text-align: left;
+    padding: 20px;
+    color: gold;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid gold;
+    border-radius: 4px;
+    background-color: transparent;
+    color: gold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: gold;
+    color: #333;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px; /* Added horizontal padding */
+    width: 100%;
+    margin: 0;
+    max-width: 1400px; /* Added max-width for larger screens */
+    margin: 0 auto; /* Center the section */
+}
+
+.side-image {
+    width: 45%;
+    height: 600px; /* Increased height */
+    object-fit: contain; /* Changed to contain to show full image */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5f5; /* Light background for image container */
+    padding: 10px; /* Added padding around images */
+}
+
+.welcome-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin: 0;
+}
+
+.welcome-content, .welcome-cta {
+    flex: 1;
+    max-width: 500px;
     padding: 10px;
-    border-radius: 8px;
 }
 
-/* Desktop Specific Styling */
-@media (min-width: 992px) {
-    .carousel-container {
-        width: 80%;
-        max-width: 1200px;
-        margin: 20px auto;
-        border-radius: 8px;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .carousel-image {
-        height: 600px;
-        object-fit: cover; /* Ensures the image fills the container without distortion */
-    }
-
-    .carousel-caption {
-        padding: 20px;
-        font-size: 1.2rem;
-        background-color: rgba(0, 0, 0, 0.5); /* Slightly lighter for better readability */
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-        font-size: 1rem;
-    }
+.welcome-content h2, .welcome-cta h2 {
+    color: gold;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
 }
 
-/* Mobile Specific Styling */
-@media (max-width: 991px) {
-    .carousel-container {
-        width: 100%;
-        margin: 0 auto;
+.welcome-content p, .welcome-cta p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.chat-button {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border: 2px solid gold;
+    border-radius: 4px;
+    background-color: transparent;
+    color: gold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.chat-button:hover {
+    background-color: gold;
+    color: #000000;
+}
+
+
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hero-container {
+        height: 100vh;
     }
 
-    .carousel-caption {
-        padding: 10px;
+    .hero-carousel {
+        height: 100vh;
+    }
+
+    .hero-image {
+        height: 100vh;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-button {
         font-size: 0.9rem;
+        padding: 8px 16px;
     }
 
-    footer {
-        font-size: 0.8rem;
+    .image-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px; /* Increased gap for better spacing */
+    }
+
+    .side-image {
+        width: 95%;
+        height: 450px; /* Adjusted height for mobile */
+        margin: 0; /* Removed margin-bottom since we're using gap */
+    }
+
+    .hero-overlay {
+        top: 30%;
+        left: 5%;
+        padding: 10px;
+    }
+    .welcome-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .welcome-content, .welcome-cta {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .welcome-content h2, .welcome-cta h2 {
+        font-size: 2rem;
+    }
+
+    .welcome-content p, .welcome-cta p {
+        font-size: 1.1rem;
+    }
+
+    .chat-button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 2.7rem;
+    }
+
+    .hero-button {
+        font-size: 1.5rem;
+        padding: 6px 12px;
+    }
+
+    .side-image {
+        height: 350px; /* Adjusted height for smaller devices */
+        padding: 5px; /* Reduced padding */
+    }
+    .welcome-section {
+        padding: 10px 10px;
+    }
+
+    .welcome-content h2, .welcome-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .welcome-content p, .welcome-cta p {
+        font-size: 1rem;
     }
 }
