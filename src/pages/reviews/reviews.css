@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
+
+.review-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.review-container h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #FFD700, #ffedb3);
+}
+
+.review-container > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-review-button {
+    display: block;
+    margin: 0 auto 40px;
+    padding: 12px 30px;
+    background-color: transparent;
+    border: 2px solid #FFD700;
+    color: #000;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add-review-button:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.review-form {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.1);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.submit-review-button,
+.cancel-review-button {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.submit-review-button {
+    background-color: #000;
+    color: #FFD700;
+    border: none;
+}
+
+.submit-review-button:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.cancel-review-button {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.cancel-review-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.review-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.review-card .review-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.review-card .review-text {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .review-container {
+        padding: 20px;
+    }
+
+    .review-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .review-list {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-form {
+        padding: 20px;
+        margin: 0 20px 30px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .submit-review-button,
+    .cancel-review-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .review-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .add-review-button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

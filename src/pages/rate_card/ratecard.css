@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
+
+.ratecard-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 60px 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2c2c2c;
+    line-height: 1.8;
+    background-color: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.ratecard-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.ratecard-container h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #FFD700, #ffedb3);
+}
+
+.ratecard-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #000;
+    margin: 40px 0 20px;
+    font-weight: 400;
+}
+
+.ratecard-container p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #444;
+    font-weight: 300;
+    max-width: 900px;
+}
+
+.ratecard-container section {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.ratecard-container ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.ratecard-container ul li {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 300;
+}
+
+.ratecard-container ul li:before {
+    content: '•';
+    color: #FFD700;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+.ratecard-container strong {
+    color: #000;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.ratecard-container section:nth-of-type(2) strong {
+    color: #000;
+    font-size: 1.3rem;
+}
+
+.ratecard-container section:last-child {
+    background: linear-gradient(to right bottom, #000, #1a1a1a);
+    color: #fff;
+}
+
+.ratecard-container section:last-child h2,
+.ratecard-container section:last-child p {
+    color: #fff;
+}
+
+.ratecard-container section:last-child strong {
+    color: #FFD700;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .ratecard-container {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+
+    .ratecard-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .ratecard-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .ratecard-container p,
+    .ratecard-container ul li {
+        font-size: 1rem;
+    }
+
+    .ratecard-container section {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ratecard-container {
+        padding: 30px 15px;
+        margin: 10px;
+    }
+
+    .ratecard-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .ratecard-container section {
+        padding: 15px;
+    }
+}

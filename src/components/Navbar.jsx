@@ -22,13 +22,12 @@ const Navbar = () => {
 
             <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
                 <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-                <li><Link to="/pricing" onClick={toggleMenu}>Pricing</Link></li>
+                <li><Link to="/ratecard" onClick={toggleMenu}>Rate Cards</Link></li>
                 <li><Link to="/reviews" onClick={toggleMenu}>Reviews</Link></li>
                 <li><Link to="/verification-cards" onClick={toggleMenu}>Verification Cards</Link></li>
                 <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
                 <li><Link to="/gallery" onClick={toggleMenu}>Gallery</Link></li>
                 <li><Link to="/faqs" onClick={toggleMenu}>FAQs</Link></li>
-                <li><Link to="/rates" onClick={toggleMenu}>Rates</Link></li>
                 <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
             </ul>
         </nav>

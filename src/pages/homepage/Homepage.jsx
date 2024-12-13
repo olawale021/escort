@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
 import Carousel from 'react-bootstrap/Carousel';
 import './Homepage.css';
+import Footer from "../../components/Footer";
 
 const Homepage = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -71,17 +72,18 @@ const Homepage = () => {
             </div>
             <div className="welcome-section">
                 <div className="welcome-content">
-                    <h2>Welcome</h2>
+                    <h2>WELCOME</h2>
                     <p>Step into a world of enchantment and allure. Let me be your guide to unforgettable moments of
                         pleasure and connection.</p>
                 </div>
                 <div className="welcome-cta">
-                    <h2>Haven't Met Yet?</h2>
+                    <h2>HAVEN'T MET YET</h2>
                     <p>If we haven't had the pleasure of meeting yet, let's chat and create something special
                         together.</p>
                     <button className="chat-button">Let's Chat</button>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

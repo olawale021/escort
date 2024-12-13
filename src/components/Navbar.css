@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');*/
 
 .navbar {
     display: flex;
@@ -22,7 +22,7 @@
 .navbar-logo a {
     color: #FFD700;
     text-decoration: none;
-    font-family: "Marck Script", cursive;
+
 }
 
 .navbar-links {
