@@ -64,7 +64,7 @@ function RateCard() {
                         Your pleasure is my priority, and I am here to provide an experience that exceeds your expectations. Whether it’s a brief escape or an indulgent night, I promise to leave you completely satisfied and yearning for more.
                     </p>
                     <p>
-                        <strong>Contact me today</strong> let’s turn your desires into reality.
+                        <strong>Contact me today let’s turn your desires into reality. </strong>
                     </p>
                 </section>
             </div>
