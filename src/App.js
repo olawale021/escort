@@ -5,11 +5,16 @@ import RateCard from './pages/rate_card/RateCard';
 import Reviews from './pages/reviews/Reviews';
 import About from './pages/about/About';
 import Gallery from './pages/gallery/Gallery';
+import Contact from './pages/contact/Contact';
+import TawkTo from "./components/TawkTo";
+import {Navbar} from "react-bootstrap";
 
 
 function App() {
   return (
       <Router>
+          <Navbar />
+          <TawkTo />
         <Routes>
           <Route path="/" element={<Homepage />} />
             <Route path="/ratecard" element={<RateCard />} />
@@ -18,8 +23,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/faqs" element={<div>FAQs Page</div>} />
-            <Route path="/rates" element={<div>Rates Page</div>} />
-            <Route path="/contact" element={<div>Contact Page</div>} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
   );

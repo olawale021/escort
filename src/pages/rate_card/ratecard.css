@@ -91,8 +91,10 @@
 }
 
 .ratecard-container section:nth-of-type(2) strong {
-    color: #000;
-    font-size: 1.3rem;
+    font-size: 1rem; /* Smaller font size */
+    font-weight: 400; /* Lighter font weight */
+    color: #333; /* Slightly muted color */
+    line-height: 1.5;
 }
 
 .ratecard-container section:last-child {

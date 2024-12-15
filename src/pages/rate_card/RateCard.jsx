@@ -2,11 +2,13 @@ import React from 'react';
 import './ratecard.css';
 import Navbar from '../../components/Navbar';
 import Footer from "../../components/Footer";
+import TawkTo from "../../components/TawkTo";
 
 function RateCard() {
     return (
         <>
             <Navbar />
+            <TawkTo />
             <div className="ratecard-container">
                 <h1>Exclusive Rate Card</h1>
                 <p>
@@ -27,15 +29,15 @@ function RateCard() {
                     <h2>Rates for Your Perfect Experience</h2>
                     <ul>
                         <li>
-                            <strong>30–60 Minutes: $250.00</strong><br />
+                            <strong>30–60 Minutes: $250.00</strong>
                             A short but unforgettable escape. Whether you seek a moment of relaxation, a burst of passion, or both, this time is yours to indulge and enjoy.
                         </li>
                         <li>
-                            <strong>2–3 Hours: $450.00</strong><br />
+                            <strong>2–3 Hours: $450.00</strong>
                             A more extended rendezvous for those who desire deeper connection and more time to savor every moment. Perfect for letting inhibitions fall away and fully embracing the experience.
                         </li>
                         <li>
-                            <strong>Overnight (8 Hours): $1,000.00</strong><br />
+                            <strong>Overnight (8 Hours): $1,000.00</strong>
                             A night of uninterrupted passion and intimacy. Share an evening where pleasure is the only priority, and wake up to the lingering warmth of satisfaction.
                         </li>
                     </ul>
@@ -55,6 +57,9 @@ function RateCard() {
                     <ul>
                         <li>Advanced booking is highly recommended for optimal planning and privacy.</li>
                         <li>Be respectful and transparent in your communication; I am here to make your dreams a reality.</li>
+                        <li>
+                            <strong>Payment Policy:</strong> For first-time clients, a minimum of 50% of the donation is required as an upfront commitment to confirm the booking, with the remaining balance due at the time of our meeting. For my valued returning clients, I offer the flexibility to either secure your reservation with an upfront payment or settle the full donation in person. This policy ensures a seamless and mutually respectful experience for all.
+                        </li>
                     </ul>
                 </section>
 

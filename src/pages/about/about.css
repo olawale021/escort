@@ -106,6 +106,18 @@
     color: #fff;
 }
 
+.gfe-item p strong {
+    color: #FFD700; /* Optional: Highlight bold text */
+    font-weight: 600;
+}
+
+
+.qualities-grid .quality-card p strong {
+    color: #DAA520; /* Goldenrod for visibility */
+    font-weight: 600;
+}
+
+
 .gfe-section h2 {
     color: #FFD700;
 }
@@ -135,10 +147,11 @@
 }
 
 .qualities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
 }
+
 
 .quality-card {
     padding: 25px;
@@ -210,6 +223,7 @@
         grid-template-columns: 1fr;
     }
 }
+
 
 @media screen and (max-width: 480px) {
     .about-header h1 {

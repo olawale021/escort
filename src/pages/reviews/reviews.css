@@ -66,6 +66,17 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+.review-tag {
+    background-color: #ffd700;
+    color: #000;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    margin-left: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+
 .form-group {
     margin-bottom: 20px;
 }

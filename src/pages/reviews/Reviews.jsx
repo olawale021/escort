@@ -2,43 +2,86 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import './reviews.css';
 import Footer from "../../components/Footer";
+import TawkTo from "../../components/TawkTo";
 
 function Review() {
     const defaultReviews = [
         {
             name: 'Michael Johnson',
             date: 'Dec 5, 2023',
-            text: 'An unforgettable experience! Professional, attentive, and absolutely wonderful. I highly recommend!',
+            text: 'Celina redefines excellence. Her captivating presence, genuine warmth, and meticulous attention to detail made our time together nothing short of enchanting. She truly delivers an experience that stays with you long after.',
+            tag: 'Returning Client',
         },
         {
-            name: 'Emily Thompson',
+            name: 'Anonymous',
             date: 'Nov 28, 2023',
-            text: 'Exceeded all my expectations. The attention to detail and level of care were unparalleled. A truly magical experience.',
+            text: 'From the moment we met, Celina’s elegance and poise took my breath away. She blends charm, intelligence, and a deep sense of connection into an experience that feels effortlessly natural and deeply fulfilling.',
         },
         {
             name: 'Christopher Davis',
             date: 'Nov 15, 2023',
-            text: 'Truly the best experience I’ve ever had. The connection was genuine and natural. I’ll definitely book again!',
+            text: 'Celina offers far more than just companionship; she provides a transformative experience. Her energy is magnetic, her beauty is radiant, and her company leaves you feeling genuinely valued and satisfied.',
+            tag: 'Returning Client',
         },
         {
-            name: 'John Carter',
+            name: 'COUPLE - Emily and Bruce Keller',
             date: 'Nov 10, 2023',
-            text: 'An exceptional experience that made me feel valued and appreciated. I can’t wait for the next time!',
+            text: 'Beyond her stunning appearance, Celina possesses a rare blend of intelligence, wit, and passion. She creates a connection that feels genuine, making our time together unforgettable.',
+            tag: 'Returning Client',
         },
         {
-            name: 'James Anderson',
+            name: 'Alan Fischer',
             date: 'Nov 8, 2023',
-            text: 'Incredible attention to detail and such a warm and welcoming personality. Highly recommended.',
+            text: 'From start to finish, Celina ensures an impeccable experience. Her attention to detail, captivating charm, and genuine care make her a one-of-a-kind professional.',
         },
         {
             name: 'Daniel Harris',
             date: 'Nov 6, 2023',
-            text: 'An absolutely amazing time. I felt completely at ease and enjoyed every moment of it.',
+            text: 'With Celina, time seems to stand still. Her ability to engage, excite, and enchant is unparalleled. A session with her is more than an appointment; it’s a work of art.',
+            tag: 'Returning Client',
+        },
+        {
+            name: 'Ben Szchrowzki',
+            date: 'Nov 3, 2023',
+            text: 'Celina is in a league of her own. Her sophistication, intelligence, and undeniable beauty make her the ultimate companion for anyone seeking the best of the best.',
+        },
+        {
+            name: 'Müller Schmidt',
+            date: 'Nov 6, 2023',
+            text: 'Words fail to capture how exceptional Celina truly is. She offers a bespoke experience, tailored perfectly to your desires, leaving you completely satisfied and eager for more.',
         },
         {
             name: 'William Robinson',
             date: 'Nov 3, 2023',
-            text: 'Top-notch service! A perfect mix of professionalism and friendliness. Will definitely return.',
+            text: 'Her reputation as one of the finest escorts is well-earned. Her beauty, intelligence, and ability to connect on every level made our encounter deeply memorable and uniquely satisfying.',
+        },
+        {
+            name: 'Javier López',
+            date: 'Dec 1, 2023',
+            text: 'Celina es pura perfección. Su encanto, elegancia y pasión me dejaron completamente satisfecho. ¡Espero nuestra próxima cita!',
+            tag: 'Returning Client',
+        },
+        {
+            name: 'Santiago Pérez',
+            date: 'Nov 27, 2023',
+            text: 'La experiencia con Celina fue inolvidable. Su atención y cuidado personal hacen de cada momento algo único y especial.',
+        },
+        {
+            name: 'Returning Client - Alex Murphy',
+            date: 'Nov 20, 2023',
+            text: 'Celina never disappoints. As a returning client, I can confidently say her services are unmatched in quality, care, and connection.',
+            tag: 'Returning Client',
+        },
+        {
+            name: 'Luis Martínez',
+            date: 'Nov 15, 2023',
+            text: 'Celina es simplemente increíble. Su sonrisa ilumina cualquier habitación, y su presencia hace que todo se sienta mágico.',
+        },
+        {
+            name: 'Oliver White',
+            date: 'Nov 12, 2023',
+            text: 'Every moment with Celina feels like a dream. Her attention, care, and passion are truly one of a kind. Highly recommended!',
+            tag: 'Returning Client',
         },
     ];
 
@@ -114,6 +157,7 @@ function Review() {
     return (
         <>
             <Navbar />
+            <TawkTo />
             <div className="review-container">
                 <h1>Client Reviews</h1>
                 <p>Here's what some of my clients have to say about their experience.</p>
@@ -167,7 +211,10 @@ function Review() {
                 <div className="review-list">
                     {reviews.map((review, index) => (
                         <div key={index} className="review-card">
-                            <h3>{review.name}</h3>
+                            <h3>
+                                {review.name}{' '}
+                                {review.tag && <span className="review-tag">{review.tag}</span>}
+                            </h3>
                             <p className="review-date">{review.date}</p>
                             <p>{review.text}</p>
                         </div>
