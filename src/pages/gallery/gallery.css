@@ -9,7 +9,7 @@
 
 .gallery-container h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-align: center;
     color: #000;
     margin-bottom: 20px;
@@ -31,7 +31,7 @@
 .gallery-description {
     text-align: center;
     color: #666;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     max-width: 800px;
     margin: 0 auto 40px;
 }
@@ -81,7 +81,7 @@
 
 .album-info h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #000;
     margin-bottom: 10px;
 }
@@ -243,17 +243,25 @@
     }
 
     .album-info h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .gallery-container h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .albums-grid {
         grid-template-columns: 1fr;
+    }
+
+    .album-title {
+        font-size: 1rem;
+    }
+
+    .album-info h2 {
+        font-size: 0.8rem;
     }
 
     .gallery-grid {

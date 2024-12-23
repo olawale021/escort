@@ -40,6 +40,20 @@
     color: #000;
     margin: 40px 0 20px;
     font-weight: 400;
+    text-align: center; /* Ensure consistent alignment */
+    position: relative;
+    padding-bottom: 10px; /* Add some spacing below */
+}
+
+.ratecard-container h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #FFD700, #ffedb3); /* Match subheader underline */
 }
 
 .ratecard-container p {
@@ -76,23 +90,25 @@
 .ratecard-container ul li:before {
     content: '•';
     color: #FFD700;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     position: absolute;
     left: 0;
     top: -2px;
 }
 
 .ratecard-container strong {
-    color: #000;
-    font-weight: 500;
-    display: block;
+    color: #000; /* Same color for consistency */
+    font-weight: 500; /* Match the font weight */
+    display: block; /* Keep block styling for better spacing */
     margin-bottom: 8px;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Match the size of "30–60 Minutes: $300.00" */
+    line-height: 1.5; /* Improve readability */
 }
+
 
 .ratecard-container section:nth-of-type(2) strong {
     font-size: 1rem; /* Smaller font size */
-    font-weight: 400; /* Lighter font weight */
+
     color: #333; /* Slightly muted color */
     line-height: 1.5;
 }
@@ -111,6 +127,16 @@
     color: #FFD700;
 }
 
+.ratecard-container section:last-child p:last-child {
+    font-family: 'Playfair Display', serif; /* Match the same font family */
+    font-size: 1rem; /* Adjust font size if necessary */
+    color: #FFD700; /* Gold color for consistency */
+    font-weight: 400; /* Match the font weight */
+    text-align: center; /* Align the text */
+    margin-top: 20px; /* Add spacing for better visibility */
+}
+
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
     .ratecard-container {
@@ -124,6 +150,7 @@
 
     .ratecard-container h2 {
         font-size: 1.5rem;
+        padding-bottom: 8px;
     }
 
     .ratecard-container p,
@@ -146,7 +173,15 @@
         font-size: 1.8rem;
     }
 
+    .ratecard-container h2 {
+        font-size: 1.2rem;
+        padding-bottom: 6px;
+    }
+
     .ratecard-container section {
         padding: 10px;
+    }
+    .ratecard-container section:last-child p:last-child {
+        font-size: 1rem; /* Smaller font size for very small screens */
     }
 }

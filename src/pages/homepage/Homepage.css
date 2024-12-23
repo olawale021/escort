@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
+
 /* Base styles */
 .page-container {
     font-family: 'Playfair Display', serif;
@@ -53,7 +55,7 @@
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
@@ -124,7 +126,8 @@
 }
 
 .welcome-content p, .welcome-cta p {
-    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat */
+    font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 15px;
     color: #ffffff;
@@ -220,12 +223,12 @@
 /* Small Mobile Devices */
 @media screen and (max-width: 480px) {
     .hero-title {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     .hero-button {
-        font-size: 1.5rem;
-        padding: 6px 12px;
+        font-size: 0.7rem;
+        padding: 3px 8px;
     }
 
     .side-image {
@@ -237,10 +240,10 @@
     }
 
     .welcome-content h2, .welcome-cta h2 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .welcome-content p, .welcome-cta p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }

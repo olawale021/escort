@@ -75,6 +75,35 @@
     line-height: 1.6;
 }
 
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    color: #FFD700; /* Gold color for the icons */
+    transition: color 0.3s ease;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #FFD700; /* Hover effect for links */
+}
+
+.contact-details p {
+    margin: 0;
+}
+
+
 .contact-form {
     display: grid;
     gap: 20px;
@@ -161,6 +190,8 @@
     top: 0;
 }
 
+
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
     .contact-grid {
@@ -196,17 +227,24 @@
 
 @media screen and (max-width: 480px) {
     .contact-container h1 {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 
     .contact-intro {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .contact-info,
     .contact-form-section,
     .booking-etiquette {
         padding: 20px;
+        font-size: 0.7rem;
+    }
+    .contact-info h2{
+        font-size: 1rem;
+    }
+    .booking-etiquette h2{
+        font-size: 1rem;
     }
 
     .submit-button {

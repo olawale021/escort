@@ -8,6 +8,8 @@ import Gallery from './pages/gallery/Gallery';
 import Contact from './pages/contact/Contact';
 import TawkTo from "./components/TawkTo";
 import {Navbar} from "react-bootstrap";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import FAQ from "./pages/faq/Faq";
 
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
             <Route path="/verification-cards" element={<div>Verification Cards Page</div>} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/faqs" element={<div>FAQs Page</div>} />
+            <Route path="/faqs" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

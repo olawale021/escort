@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from "../../components/Footer";
 import TawkTo from "../../components/TawkTo";
 
+
 function RateCard() {
     return (
         <>
@@ -29,11 +30,11 @@ function RateCard() {
                     <h2>Rates for Your Perfect Experience</h2>
                     <ul>
                         <li>
-                            <strong>30–60 Minutes: $250.00</strong>
+                            <strong>30–60 Minutes: $300.00</strong>
                             A short but unforgettable escape. Whether you seek a moment of relaxation, a burst of passion, or both, this time is yours to indulge and enjoy.
                         </li>
                         <li>
-                            <strong>2–3 Hours: $450.00</strong>
+                            <strong>2–3 Hours: $500.00</strong>
                             A more extended rendezvous for those who desire deeper connection and more time to savor every moment. Perfect for letting inhibitions fall away and fully embracing the experience.
                         </li>
                         <li>
@@ -46,7 +47,7 @@ function RateCard() {
                 <section>
                     <h2>Additional Information</h2>
                     <ul>
-                        <li><strong>Outcalls:</strong> Add an extra $50.00 for the convenience of having me join you in your preferred location, whether it’s your home or a luxurious hotel suite.</li>
+                        <li><strong>Outcalls:</strong> Add an extra $100.00 for the convenience of having me join you in your preferred location, whether it’s your home or a luxurious hotel suite.</li>
                         <li><strong>Discretion and Privacy:</strong> I value and uphold complete confidentiality to ensure your comfort and peace of mind.</li>
                         <li><strong>Personalized Experiences:</strong> If you have specific requests or longer engagements in mind, we can tailor our time together to create your ultimate fantasy. Please inquire for custom arrangements.</li>
                     </ul>
@@ -57,9 +58,6 @@ function RateCard() {
                     <ul>
                         <li>Advanced booking is highly recommended for optimal planning and privacy.</li>
                         <li>Be respectful and transparent in your communication; I am here to make your dreams a reality.</li>
-                        <li>
-                            <strong>Payment Policy:</strong> For first-time clients, a minimum of 50% of the donation is required as an upfront commitment to confirm the booking, with the remaining balance due at the time of our meeting. For my valued returning clients, I offer the flexibility to either secure your reservation with an upfront payment or settle the full donation in person. This policy ensures a seamless and mutually respectful experience for all.
-                        </li>
                     </ul>
                 </section>
 
@@ -69,7 +67,7 @@ function RateCard() {
                         Your pleasure is my priority, and I am here to provide an experience that exceeds your expectations. Whether it’s a brief escape or an indulgent night, I promise to leave you completely satisfied and yearning for more.
                     </p>
                     <p>
-                        <strong>Contact me today let’s turn your desires into reality. </strong>
+                        Why wait? Let’s turn your fantasies into unforgettable moments right now.
                     </p>
                 </section>
             </div>

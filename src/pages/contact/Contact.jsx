@@ -4,6 +4,8 @@ import Footer from '../../components/Footer';
 import './contact.css';
 import TawkTo from "../../components/TawkTo";
 
+
+
 function Contact() {
     return (
         <>
@@ -20,26 +22,36 @@ function Contact() {
                         <h2>Contact Information</h2>
                         <div className="contact-details">
                             <div className="contact-item">
-                                <h3>Email</h3>
-                                <p>contact@example.com</p>
+                                <i className="fas fa-phone contact-icon"></i>
+                                <p>
+                                    <strong>Telephone:</strong>
+                                    <a href="tel:+12138019763" target="_blank" rel="noopener noreferrer">+1 (213)
+                                        801-9763</a>
+                                </p>
                             </div>
                             <div className="contact-item">
-                                <h3>Phone</h3>
-                                <p>Available upon request</p>
+                                <i className="fas fa-phone-alt contact-icon"></i>
+                                <p><strong>WhatsApp:</strong> <a href="https://wa.me/+12138019763" target="_blank"
+                                                                 rel="noopener noreferrer">+1 (213) 801-9763</a></p>
                             </div>
                             <div className="contact-item">
-                                <h3>Location</h3>
-                                <p>Inner City, Sydney</p>
+                                <i className="fab fa-instagram contact-icon"></i>
+                                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/CxlinaMay"
+                                                                  target="_blank"
+                                                                  rel="noopener noreferrer">@CxlinaMay</a></p>
                             </div>
                             <div className="contact-item">
-                                <h3>Hours</h3>
-                                <p>Monday - Friday: 8 AM - Late</p>
-                                <p>Saturday: 9 AM - Late</p>
-                                <p>Sunday: By appointment</p>
+                                <i className="fab fa-telegram-plane contact-icon"></i>
+                                <p><strong>Telegram:</strong> <a href="https://t.me/CxlinaMay" target="_blank"
+                                                                 rel="noopener noreferrer">@CxlinaMay</a></p>
+                            </div>
+                            <div className="contact-item">
+                                <i className="fab fa-twitter contact-icon"></i>
+                                <p><strong>Twitter (X):</strong> <a href="https://twitter.com/CxlinaMay" target="_blank"
+                                                                    rel="noopener noreferrer">@CxlinaMay</a></p>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <section className="booking-etiquette">
