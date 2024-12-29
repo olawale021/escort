@@ -27,7 +27,6 @@ const Footer = () => {
                     <ul>
                         <li>Email: contact@example.com</li>
                         <li>Phone: Available on request</li>
-                        <li>Location: Inner City, Sydney</li>
                     </ul>
                 </div>
 
