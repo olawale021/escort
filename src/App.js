@@ -10,6 +10,7 @@ import TawkTo from "./components/TawkTo";
 import {Navbar} from "react-bootstrap";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import FAQ from "./pages/faq/Faq";
+import VerificationPage from "./pages/verification-page/VerificationPage";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/faqs" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/verifications" element={<VerificationPage />} />
         </Routes>
       </Router>
   );

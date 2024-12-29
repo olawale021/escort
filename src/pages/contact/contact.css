@@ -56,6 +56,8 @@
     font-size: 2rem;
     color: #000;
     margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
 }
 
 .contact-details {
@@ -242,6 +244,7 @@
     }
     .contact-info h2{
         font-size: 1rem;
+        align-items: center;
     }
     .booking-etiquette h2{
         font-size: 1rem;

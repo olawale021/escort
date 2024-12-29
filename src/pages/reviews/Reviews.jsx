@@ -74,7 +74,7 @@ function Review() {
         },
         {
             name: 'Luis Martínez',
-            date: 'Jan 22 15, 2022',
+            date: 'Jan 22, 2022',
             text: 'Celina es simplemente increíble. Su sonrisa ilumina cualquier habitación, y su presencia hace que todo se sienta mágico.',
         },
         {

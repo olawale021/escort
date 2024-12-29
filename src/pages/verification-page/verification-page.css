@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #FFD700;
+    --color-secondary: #FFD700;
+    --color-text-dark: #E5E7EB;
+    --color-text-light: #E5E7EB;
+    --color-background: #1a1a1a;
+    --color-white: #1a1a1a;
+    --color-border: #E5E7EB;
+    --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.verification-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    background-color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-dark);
+    line-height: 1.6;
+}
+
+.verification-container h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: -0.025em;
+    opacity: 0;
+    animation: fadeInDown 0.8s forwards;
+}
+
+.verification-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: var(--color-background);
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+.verification-section:hover {
+    box-shadow: var(--shadow-subtle);
+    transform: translateY(-5px);
+}
+
+.verification-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 0.5rem;
+}
+
+.verification-section p {
+    font-size: 0.7rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+.credentials-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.verification-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-subtle);
+    transition: transform 0.3s ease;
+}
+
+.verification-image:hover {
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger Animation for Sections */
+.verification-section:nth-child(2) { animation-delay: 0.2s; }
+.verification-section:nth-child(3) { animation-delay: 0.4s; }
+.verification-section:nth-child(4) { animation-delay: 0.6s; }
+.verification-section:nth-child(5) { animation-delay: 0.8s; }
+.verification-section:nth-child(6) { animation-delay: 1s; }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .verification-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .verification-container h1 {
+        font-size: 2rem;
+    }
+
+    .verification-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .verification-section p {
+        font-size: 0.7rem;
+    }
+
+    .credentials-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .verification-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .verification-section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin-bottom: 1rem;
+        padding: 0;
+        border: none;
+    }
+}

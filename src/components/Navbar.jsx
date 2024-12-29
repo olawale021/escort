@@ -32,7 +32,7 @@ const Navbar = () => {
                 <li><Link to="/gallery" onClick={toggleMenu}>Treasure Trove</Link></li>
                 <li><Link to="/ratecard" onClick={toggleMenu}>Lustful Rates</Link></li>
                 <li><Link to="/reviews" onClick={toggleMenu}>Testaments of Pleasure</Link></li>
-                <li><Link to="/verification-cards" onClick={toggleMenu}>Lust Licenses</Link></li>
+                <li><Link to="/verifications" onClick={toggleMenu}>Lust Licenses</Link></li>
                 <li><Link to="/faqs" onClick={toggleMenu}>FAQs</Link></li>
                 <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
             </ul>

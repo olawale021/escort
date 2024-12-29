@@ -38,7 +38,7 @@
 .footer-section p {
     color: #ccc;
     line-height: 1.6;
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     margin-bottom: 20px;
 }
 
@@ -112,6 +112,11 @@
 
     .footer-section {
         text-align: center;
+    }
+
+    .footer-section,
+    .footer-section ul li a{
+        font-size: 0.7rem;
     }
 
     .footer-section h3::after {
