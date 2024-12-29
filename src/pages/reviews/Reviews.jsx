@@ -7,7 +7,7 @@ import TawkTo from "../../components/TawkTo";
 function Review() {
     const defaultReviews = [
         {
-            name: 'Michael Johnson',
+            name: 'Michael',
             date: 'Dec 5, 2024',
             text: 'Celina redefines excellence. Her captivating presence, genuine warmth, and meticulous attention to detail made our time together nothing short of enchanting. She truly delivers an experience that stays with you long after.',
             tag: 'Returning Client',
@@ -35,7 +35,7 @@ function Review() {
             text: 'From start to finish, Celina ensures an impeccable experience. Her attention to detail, captivating charm, and genuine care make her a one-of-a-kind professional.',
         },
         {
-            name: 'Daniel Harris',
+            name: 'Anonymous',
             date: 'Apr 6, 2024',
             text: 'With Celina, time seems to stand still. Her ability to engage, excite, and enchant is unparalleled. A session with her is more than an appointment; it’s a work of art.',
             tag: 'Returning Client',
@@ -51,7 +51,7 @@ function Review() {
             text: 'Words fail to capture how exceptional Celina truly is. She offers a bespoke experience, tailored perfectly to your desires, leaving you completely satisfied and eager for more.',
         },
         {
-            name: 'William Robinson',
+            name: 'William',
             date: 'Nov 3, 2023',
             text: 'Her reputation as one of the finest escorts is well-earned. Her beauty, intelligence, and ability to connect on every level made our encounter deeply memorable and uniquely satisfying.',
         },
@@ -78,7 +78,7 @@ function Review() {
             text: 'Celina es simplemente increíble. Su sonrisa ilumina cualquier habitación, y su presencia hace que todo se sienta mágico.',
         },
         {
-            name: 'Oliver White',
+            name: 'Anonymous',
             date: 'Jan 12, 2022',
             text: 'Every moment with Celina feels like a dream. Her attention, care, and passion are truly one of a kind. Highly recommended!',
             tag: 'Returning Client',
