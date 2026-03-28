@@ -29,27 +29,6 @@ function Contact() {
                                         801-9763</a>
                                 </p>
                             </div>
-                            <div className="contact-item">
-                                <i className="fas fa-phone-alt contact-icon"></i>
-                                <p><strong>WhatsApp:</strong> <a href="https://wa.me/+12138019763" target="_blank"
-                                                                 rel="noopener noreferrer">+1 (213) 801-9763</a></p>
-                            </div>
-                            <div className="contact-item">
-                                <i className="fab fa-instagram contact-icon"></i>
-                                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/CxlinaMay"
-                                                                  target="_blank"
-                                                                  rel="noopener noreferrer">@CxlinaMay</a></p>
-                            </div>
-                            <div className="contact-item">
-                                <i className="fab fa-telegram-plane contact-icon"></i>
-                                <p><strong>Telegram:</strong> <a href="https://t.me/CxlinaMay" target="_blank"
-                                                                 rel="noopener noreferrer">@CxlinaMay</a></p>
-                            </div>
-                            <div className="contact-item">
-                                <i className="fab fa-twitter contact-icon"></i>
-                                <p><strong>Twitter (X):</strong> <a href="https://twitter.com/CxlinaMay" target="_blank"
-                                                                    rel="noopener noreferrer">@CxlinaMay</a></p>
-                            </div>
                         </div>
                     </div>
                 </div>
