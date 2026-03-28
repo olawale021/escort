@@ -5,7 +5,16 @@ import Footer from "../../components/Footer";
 import TawkTo from "../../components/TawkTo";
 
 function Review() {
-    const defaultReviews = [
+    const [reviews, setReviews] = useState([]);
+    const [newReview, setNewReview] = useState({
+        name: '',
+        text: '',
+    });
+    const [isFormOpen, setIsFormOpen] = useState(false);
+
+    // Load reviews from localStorage or initialize with defaults
+    useEffect(() => {
+        const defaultReviews = [
         {
             name: 'Christopher Blake',
             date: 'Jan 2, 2026',
@@ -292,29 +301,19 @@ function Review() {
         },
     ];
 
-    const [reviews, setReviews] = useState([]);
-    const [newReview, setNewReview] = useState({
-        name: '',
-        text: '',
-    });
-    const [isFormOpen, setIsFormOpen] = useState(false);
-
-    // Load reviews from localStorage or initialize with defaults
-    useEffect(() => {
         try {
             const savedReviews = localStorage.getItem('reviews');
             if (savedReviews) {
                 setReviews(JSON.parse(savedReviews));
             } else {
-                // Save defaultReviews to localStorage if not already saved
                 setReviews(defaultReviews);
                 localStorage.setItem('reviews', JSON.stringify(defaultReviews));
             }
         } catch (error) {
             console.error('Error loading reviews from localStorage:', error);
-            setReviews(defaultReviews); // Fallback to default reviews
+            setReviews(defaultReviews);
         }
-    }, [defaultReviews]);
+    }, []);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
