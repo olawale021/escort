@@ -72,12 +72,12 @@ const Homepage = () => {
             <div className="image-section">
                 <img
                     src="https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/W4.jpeg?alt=media&token=ac3a361b-6d3c-4d04-9ef1-def44ba7fae5"
-                    alt="Image 1"
+                    alt="Celina portrait 1"
                     className="side-image"
                 />
                 <img
                     src="https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/W6.jpeg?alt=media&token=cd9bae54-b3de-4ab3-8158-0d06e99c6e17"
-                    alt="Image 2"
+                    alt="Celina portrait 2"
                     className="side-image"
                 />
             </div>

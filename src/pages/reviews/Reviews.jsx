@@ -314,7 +314,7 @@ function Review() {
             console.error('Error loading reviews from localStorage:', error);
             setReviews(defaultReviews); // Fallback to default reviews
         }
-    }, []);
+    }, [defaultReviews]);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
