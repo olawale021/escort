@@ -15,10 +15,14 @@ const Navbar = () => {
             <div className="navbar-logo">
                 <Link to="/">
                     <img
-                        src="https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/JAP%20BARBIE.png?alt=media&token=496116f9-0ad2-4fea-ab96-fe6308d1bfa7" // Replace with your logo's path
+                        src={`${process.env.PUBLIC_URL}/favicon.png`}
                         alt="Japanese Barbie Logo"
                         className="logo-image"
                     />
+                    <span className="logo-wordmark">
+                        <span className="wordmark-name">Celina</span>
+                        <span className="wordmark-sub">Japanese Barbie</span>
+                    </span>
                 </Link>
             </div>
 

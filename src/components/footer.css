@@ -1,28 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
-
 .footer {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 60px 0 20px;
-    font-family: 'Montserrat', sans-serif;
+    background: var(--ink);
+    color: var(--ivory-dim);
+    padding: 96px 0 28px;
+    font-family: var(--font-body);
+    position: relative;
+    border-top: 1px solid var(--rule);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--champagne), transparent);
+    opacity: 0.5;
 }
 
 .footer-content {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 56px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 64px;
 }
 
 .footer-section h3 {
-    font-family: 'Playfair Display', serif;
-    color: #FFD700;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-family: var(--font-label);
+    color: var(--champagne);
+    font-size: 0.72rem;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    margin: 0 0 22px;
+    padding-bottom: 14px;
     position: relative;
-    padding-bottom: 10px;
+    font-weight: 400;
 }
 
 .footer-section h3::after {
@@ -30,16 +44,20 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 40px;
-    height: 2px;
-    background: linear-gradient(to right, #FFD700, transparent);
+    width: 24px;
+    height: 1px;
+    background: var(--champagne);
 }
 
 .footer-section p {
-    color: #ccc;
-    line-height: 1.6;
-    font-size: 0.8rem;
-    margin-bottom: 20px;
+    color: var(--ivory-dim);
+    line-height: 1.75;
+    font-size: 0.92rem;
+    font-weight: 300;
+    font-family: var(--font-display);
+    font-style: italic;
+    margin: 0 0 18px;
+    max-width: 320px;
 }
 
 .footer-section ul {
@@ -49,82 +67,86 @@
 }
 
 .footer-section ul li {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: var(--ivory-dim);
+    line-height: 1.6;
 }
 
 .footer-section ul li a {
-    color: #ccc;
+    color: var(--ivory-dim);
     text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 1rem;
+    font-family: var(--font-label);
+    font-size: 0.68rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    transition: color 0.4s var(--ease), letter-spacing 0.4s var(--ease);
+    display: inline-block;
 }
 
 .footer-section ul li a:hover {
-    color: #FFD700;
-    padding-left: 5px;
+    color: var(--champagne-bright);
+    letter-spacing: 0.34em;
 }
 
 .footer-bottom {
     max-width: 1400px;
-    margin: 40px auto 0;
-    padding: 20px 40px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 72px auto 0;
+    padding: 28px 56px 0;
+    border-top: 1px solid var(--rule);
     text-align: center;
-    font-size: 0.9rem;
-    color: #888;
+    font-family: var(--font-label);
+    font-size: 0.62rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--champagne-deep);
 }
 
 .footer-bottom p {
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
-/* Media Queries */
 @media screen and (max-width: 1024px) {
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 48px;
+        padding: 0 36px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .footer {
-        padding: 40px 0 20px;
+        padding: 72px 0 24px;
     }
 
     .footer-content {
-        padding: 0 20px;
+        padding: 0 28px;
+        gap: 40px;
     }
 
     .footer-bottom {
-        padding: 20px 20px 0;
+        padding: 24px 28px 0;
     }
 }
 
 @media screen and (max-width: 480px) {
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 44px;
+        text-align: left;
     }
 
     .footer-section h3 {
-        font-size: 1.2rem;
+        font-size: 0.66rem;
     }
 
-    .footer-section {
-        text-align: center;
-    }
-
-    .footer-section,
-    .footer-section ul li a{
-        font-size: 0.8rem;
-    }
-
-    .footer-section h3::after {
-        left: 50%;
-        transform: translateX(-50%);
+    .footer-section p {
+        font-size: 0.92rem;
     }
 
     .footer-bottom {
-        font-size: 0.8rem;
+        font-size: 0.56rem;
+        letter-spacing: 0.28em;
     }
 }

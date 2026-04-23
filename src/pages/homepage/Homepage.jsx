@@ -25,14 +25,14 @@ const Homepage = () => {
 
     const carouselImages = {
         desktop: [
-            "https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/WhatsApp%20Image%202024-12-11%20at%2011.49.38%20AM.jpg?alt=media&token=dff4a874-5cc3-4fe7-9aed-97b6c1b935e4",
-            "https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/WhatsApp%20Image%202024-12-11%20at%2011.49.41%20AM%20(1).jpg?alt=media&token=226371b8-b524-47e3-ab6e-6c99f0e901ec",
-            "https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/WhatsApp%20Image%202024-12-11%20at%2011.49.41%20AM.jpg?alt=media&token=8fdf0136-d946-4d23-9f1e-6de7d509a937"
+            `${process.env.PUBLIC_URL}/images/hero/IMG_0669.PNG`,
+            `${process.env.PUBLIC_URL}/images/hero/IMG_0670.PNG`,
+            `${process.env.PUBLIC_URL}/images/hero/IMG_2916.PNG`
         ],
         mobile: [
-            "https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/WM1.jpeg?alt=media&token=1a173558-9b22-4170-8cf5-1a985955c31d",
-            "https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/WM.jpeg?alt=media&token=46124676-2d3f-409b-b093-e52f9a1e97e8",
-            "https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/W3.jpeg?alt=media&token=3b7d7139-3b16-45aa-bfb8-09906a323086"
+            `${process.env.PUBLIC_URL}/images/hero/IMG_0669.PNG`,
+            `${process.env.PUBLIC_URL}/images/hero/IMG_0670.PNG`,
+            `${process.env.PUBLIC_URL}/images/hero/IMG_2916.PNG`
         ]
     };
 
@@ -62,36 +62,64 @@ const Homepage = () => {
                     ))}
                 </Carousel>
                 <div className="hero-overlay">
+                    <span className="hero-eyebrow">— An Intimate Encounter —</span>
                     <h1 className="hero-title">
-                        Your Creamy <br/>
-                        Japanese Seductress
+                        <em>Your</em> Creamy<br/>
+                        Japanese <em>Seductress</em>
                     </h1>
-                    <button className="hero-button" onClick={openChat}>Book Your Intimate Escape</button>
+                    <p className="hero-lede">
+                        A private world of quiet indulgence, refined company, and unforgettable evenings.
+                    </p>
+                    <button className="hero-button" onClick={openChat}>
+                        <span>Book Your Intimate Escape</span>
+                    </button>
                 </div>
+                <div className="hero-vignette" aria-hidden="true"></div>
             </div>
-            <div className="image-section">
-                <img
-                    src="https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/W4.jpeg?alt=media&token=ac3a361b-6d3c-4d04-9ef1-def44ba7fae5"
-                    alt="Celina portrait 1"
-                    className="side-image"
-                />
-                <img
-                    src="https://firebasestorage.googleapis.com/v0/b/exchange-a72f2.appspot.com/o/W6.jpeg?alt=media&token=cd9bae54-b3de-4ab3-8158-0d06e99c6e17"
-                    alt="Celina portrait 2"
-                    className="side-image"
-                />
-            </div>
-            <div className="welcome-section">
+            <section className="portrait-section">
+                <div className="ornament" aria-hidden="true">
+                    <span className="ornament-rule"></span>
+                    <span className="ornament-mark">✦</span>
+                    <span className="ornament-rule"></span>
+                </div>
+                <span className="portrait-eyebrow">— Portraits —</span>
+                <div className="image-section">
+                    <figure className="portrait-frame">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/rndms/PHOTO-2024-12-15-14-42-56.jpg`}
+                            alt="Celina portrait 1"
+                            className="side-image"
+                        />
+                        <figcaption>No. 01</figcaption>
+                    </figure>
+                    <figure className="portrait-frame">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/rndms/PHOTO-2024-12-15-14-50-04.jpg`}
+                            alt="Celina portrait 2"
+                            className="side-image"
+                        />
+                        <figcaption>No. 02</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section className="welcome-section">
                 <div className="welcome-content">
-                    <h2>STEP INTO A WORLD OF ENCHANTMENT AND ALLURE WITH CELINA</h2>
-                    <p>Welcome to Celina’s world—a realm where sophistication meets sensuality, and every detail is designed to elevate your experience. Celina is not just a companion; she is a confidante, a muse, and an enchantress who weaves unforgettable moments of passion and connection. With her by your side, you’ll step into a world unlike any other—a space that promises intimacy, excitement, and a touch of daring temptation.</p>
+                    <span className="welcome-eyebrow">— Enchantment —</span>
+                    <h2>Step into a world of <em>allure</em> with Celina</h2>
+                    <p>
+                        <span className="drop-cap">W</span>elcome to Celina’s world—a realm where sophistication meets sensuality, and every detail is designed to elevate your experience. Celina is not just a companion; she is a confidante, a muse, and an enchantress who weaves unforgettable moments of passion and connection. With her by your side, you’ll step into a world unlike any other—a space that promises intimacy, excitement, and a touch of daring temptation.
+                    </p>
                 </div>
+                <div className="welcome-divider" aria-hidden="true"></div>
                 <div className="welcome-cta">
-                    <h2>STILL MISSING OUT ON WHAT YOU CRAVE?</h2>
+                    <span className="welcome-eyebrow">— Desire —</span>
+                    <h2>Still missing out on <em>what you crave?</em></h2>
                     <p>If we haven’t yet had the chance to indulge in each other’s company, there’s no better time to start. Let’s connect, explore, and create an experience so irresistible it lingers in your mind long after. Don’t just imagine the pleasure—take the step to make it a reality.</p>
-                    <button className="chat-button" onClick={openChat}>Let's get Naughty</button>
+                    <button className="chat-button" onClick={openChat}>
+                        <span>Let’s get Naughty</span>
+                    </button>
                 </div>
-            </div>
+            </section>
             <Footer />
         </div>
         </>
