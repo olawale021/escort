@@ -20,7 +20,6 @@ const Navbar = () => {
                         className="logo-image"
                     />
                     <span className="logo-wordmark">
-                        <span className="wordmark-name">Celina</span>
                         <span className="wordmark-sub">Japanese Barbie</span>
                     </span>
                 </Link>

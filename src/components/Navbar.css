@@ -71,11 +71,11 @@
 .wordmark-sub {
     font-family: var(--font-label);
     font-weight: 500;
-    font-size: 0.72rem;
-    letter-spacing: 0.52em;
+    font-size: 1.05rem;
+    letter-spacing: 0.48em;
     text-transform: uppercase;
     color: var(--champagne-bright);
-    padding-left: 0.52em; /* compensate letter-spacing for visual centering */
+    padding-left: 0.48em; /* compensate letter-spacing for visual centering */
 }
 
 /* Menu row */
@@ -166,13 +166,10 @@
         padding: 16px 24px 0;
     }
 
-    .wordmark-name {
-        font-size: 1.9rem;
-    }
-
     .wordmark-sub {
-        font-size: 0.64rem;
-        letter-spacing: 0.42em;
+        font-size: 0.9rem;
+        letter-spacing: 0.4em;
+        padding-left: 0.4em;
     }
 
     .navbar-links li a {
@@ -202,13 +199,10 @@
         display: block;
     }
 
-    .wordmark-name {
-        font-size: 1.6rem;
-    }
-
     .wordmark-sub {
-        font-size: 0.58rem;
-        letter-spacing: 0.38em;
+        font-size: 0.82rem;
+        letter-spacing: 0.36em;
+        padding-left: 0.36em;
     }
 
     .navbar-links {
@@ -264,12 +258,9 @@
         width: 40px;
     }
 
-    .wordmark-name {
-        font-size: 1.35rem;
-    }
-
     .wordmark-sub {
-        font-size: 0.52rem;
+        font-size: 0.68rem;
         letter-spacing: 0.3em;
+        padding-left: 0.3em;
     }
 }
