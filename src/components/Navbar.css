@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 /* =========================================================
    EDITORIAL MASTHEAD NAV
 ========================================================= */
@@ -58,10 +60,9 @@
 }
 
 .wordmark-name {
-    font-family: var(--font-display);
-    font-variation-settings: "opsz" 144, "SOFT" 60;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 2.2rem;
     color: var(--ivory);
     letter-spacing: -0.005em;
@@ -69,13 +70,13 @@
 }
 
 .wordmark-sub {
-    font-family: var(--font-label);
-    font-weight: 500;
-    font-size: 1.05rem;
-    letter-spacing: 0.48em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    letter-spacing: 0;
     text-transform: uppercase;
     color: var(--champagne-bright);
-    padding-left: 0.48em; /* compensate letter-spacing for visual centering */
+    padding-left: 0;
 }
 
 /* Menu row */
@@ -109,11 +110,11 @@
     display: inline-block;
     color: var(--ivory);
     text-decoration: none;
-    font-family: var(--font-label);
-    font-weight: 500;
-    font-size: 0.82rem;
-    letter-spacing: 0.24em;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    letter-spacing: 0;
+    text-transform: none;
     padding: 6px 22px;
     transition: color 0.4s var(--ease);
 }
@@ -167,14 +168,14 @@
     }
 
     .wordmark-sub {
-        font-size: 0.9rem;
-        letter-spacing: 0.4em;
-        padding-left: 0.4em;
+        font-size: 1.85rem;
+        letter-spacing: 0;
+        padding-left: 0;
     }
 
     .navbar-links li a {
-        font-size: 0.74rem;
-        letter-spacing: 0.18em;
+        font-size: 0.95rem;
+        letter-spacing: 0;
         padding: 6px 14px;
     }
 }
@@ -200,9 +201,9 @@
     }
 
     .wordmark-sub {
-        font-size: 0.82rem;
-        letter-spacing: 0.36em;
-        padding-left: 0.36em;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        padding-left: 0;
     }
 
     .navbar-links {
@@ -239,8 +240,8 @@
         display: block;
         padding: 16px 0;
         text-align: center;
-        font-size: 0.82rem;
-        letter-spacing: 0.32em;
+        font-size: 1rem;
+        letter-spacing: 0;
     }
 
     .navbar-links li a::before {
@@ -259,8 +260,8 @@
     }
 
     .wordmark-sub {
-        font-size: 0.68rem;
-        letter-spacing: 0.3em;
-        padding-left: 0.3em;
+        font-size: 1.3rem;
+        letter-spacing: 0;
+        padding-left: 0;
     }
 }

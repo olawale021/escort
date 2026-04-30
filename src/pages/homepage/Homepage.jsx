@@ -62,7 +62,6 @@ const Homepage = () => {
                     ))}
                 </Carousel>
                 <div className="hero-overlay">
-                    <span className="hero-eyebrow">— An Intimate Encounter —</span>
                     <h1 className="hero-title">
                         <em>Your</em> Creamy<br/>
                         Japanese <em>Seductress</em>
@@ -86,14 +85,6 @@ const Homepage = () => {
                 <div className="image-section">
                     <figure className="portrait-frame">
                         <img
-                            src={`${process.env.PUBLIC_URL}/images/rndms/PHOTO-2024-12-15-14-42-56.jpg`}
-                            alt="Celina portrait 1"
-                            className="side-image"
-                        />
-                        <figcaption>No. 01</figcaption>
-                    </figure>
-                    <figure className="portrait-frame">
-                        <img
                             src={`${process.env.PUBLIC_URL}/images/rndms/PHOTO-2024-12-15-14-50-04.jpg`}
                             alt="Celina portrait 2"
                             className="side-image"
@@ -104,7 +95,6 @@ const Homepage = () => {
             </section>
             <section className="welcome-section">
                 <div className="welcome-content">
-                    <span className="welcome-eyebrow">— Enchantment —</span>
                     <h2>Step into a world of <em>allure</em> with Celina</h2>
                     <p>
                         <span className="drop-cap">W</span>elcome to Celina’s world—a realm where sophistication meets sensuality, and every detail is designed to elevate your experience. Celina is not just a companion; she is a confidante, a muse, and an enchantress who weaves unforgettable moments of passion and connection. With her by your side, you’ll step into a world unlike any other—a space that promises intimacy, excitement, and a touch of daring temptation.
@@ -112,7 +102,6 @@ const Homepage = () => {
                 </div>
                 <div className="welcome-divider" aria-hidden="true"></div>
                 <div className="welcome-cta">
-                    <span className="welcome-eyebrow">— Desire —</span>
                     <h2>Still missing out on <em>what you crave?</em></h2>
                     <p>If we haven’t yet had the chance to indulge in each other’s company, there’s no better time to start. Let’s connect, explore, and create an experience so irresistible it lingers in your mind long after. Don’t just imagine the pleasure—take the step to make it a reality.</p>
                     <button className="chat-button" onClick={openChat}>

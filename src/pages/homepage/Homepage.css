@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 .page-container {
-    font-family: var(--font-body);
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -74,7 +76,7 @@
 
 .hero-eyebrow {
     display: inline-block;
-    font-family: var(--font-label);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 0.88rem;
     letter-spacing: 0.42em;
@@ -87,10 +89,9 @@
 }
 
 .hero-title {
-    font-family: var(--font-display);
-    font-variation-settings: "opsz" 144, "SOFT" 100;
-    font-weight: 500;
-    font-size: clamp(2.8rem, 6.4vw, 5.6rem);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4.4vw, 3.8rem);
     line-height: 1.0;
     letter-spacing: -0.012em;
     margin: 0 0 26px;
@@ -104,13 +105,12 @@
     font-style: italic;
     font-weight: 400;
     color: var(--champagne-bright);
-    font-family: var(--font-display);
-    font-variation-settings: "opsz" 144, "SOFT" 100;
+    font-family: 'Playfair Display', serif;
 }
 
 .hero-lede {
-    font-family: var(--font-body);
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.7;
     color: var(--ivory);
@@ -129,7 +129,7 @@
 .hero-button {
     position: relative;
     display: inline-block;
-    font-family: var(--font-label);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 0.92rem;
     letter-spacing: 0.28em;
@@ -208,7 +208,7 @@
 
 .portrait-eyebrow {
     display: inline-block;
-    font-family: var(--font-label);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 0.82rem;
     letter-spacing: 0.44em;
@@ -265,9 +265,9 @@
 
 .portrait-frame figcaption {
     margin-top: 18px;
-    font-family: var(--font-display);
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.05rem;
     color: var(--champagne);
     letter-spacing: 0.08em;
@@ -318,7 +318,7 @@
 
 .welcome-eyebrow {
     display: inline-block;
-    font-family: var(--font-label);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 0.8rem;
     letter-spacing: 0.44em;
@@ -329,9 +329,8 @@
 
 .welcome-content h2,
 .welcome-cta h2 {
-    font-family: var(--font-display);
-    font-variation-settings: "opsz" 144, "SOFT" 80;
-    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
     color: var(--ivory);
     font-size: clamp(2rem, 3.4vw, 3rem);
     line-height: 1.08;
@@ -344,11 +343,12 @@
     font-style: italic;
     font-weight: 400;
     color: var(--champagne-bright);
+    font-family: 'Playfair Display', serif;
 }
 
 .welcome-content p,
 .welcome-cta p {
-    font-family: var(--font-body);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.02rem;
     line-height: 1.8;
@@ -358,9 +358,9 @@
 
 .drop-cap {
     float: left;
-    font-family: var(--font-display);
+    font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 4rem;
     line-height: 0.82;
     padding: 8px 10px 0 0;
@@ -370,7 +370,7 @@
 .chat-button {
     position: relative;
     display: inline-block;
-    font-family: var(--font-label);
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
     letter-spacing: 0.28em;
